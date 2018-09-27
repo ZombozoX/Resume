@@ -1,0 +1,2 @@
+Other Tab - Carousel a pictures of drawings, photos, fun facts, videos and pictures of hobbies  of webiste summary and iframe of websites scrolls down and opens up (https://www.w3schools.com/howto/howto_js_accordion.asp)
+(https://getbootstrap.com/docs/4.0/components/carousel/)

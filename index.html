@@ -1,0 +1,237 @@
+<html>
+<head>
+<style>
+/* Background Image */
+.parallax1 {
+    /* The image used */
+    background-image: url("otherImages/Magenta.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 750px;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("otherImages/Liquor Shop RESIZE.png");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 750px;
+}
+
+/* Header */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+    color: #FFAFDF;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+p {
+  margin-right: 110px;
+  margin-left: 110px;
+}
+
+.other1 {
+  font-size: 23;
+  color: #595959;
+
+}
+
+.top-container {
+  background-color: #FBD2FF;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #FDB2FF;
+  color: #555;
+  z-index: 2;
+}
+
+.content {
+  padding: 25px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/* Columns */
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.columnSide {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    height: 2000px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    height: 85%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Links*/
+a:link {
+    color: #555;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #828282;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+  <ul>
+    <li><a class="active" href="file:///E:/Coding/Test%20Resume/testIntro_Header.html">Home</a></li>
+    <li><a href="file:///E:/Coding/Test%20Resume/testProjectlink.html">Projects</a></li>
+    <li><a href="mailto:cchapin03@gmail.com">Contact</a></li>
+    <li><a href="file:///E:/Coding/Test%20Resume/testOtherlink.html">Other</a></li>
+  </ul>
+
+  <div class="row">
+    <div class="columnSide" style="background-color:#000;"></div>
+    <div class="column">
+      <div class="content">
+        <h3></h3>
+      <div class="parallax1"></div>
+        <p>My background</p>
+        <p>My name is Cameron Chapin, I'm 15, this year I'll be a sophomore at A-Tech. I'd describe myself as a happy and calm-but I can become hyper, but I can be stubborn if I set my mind on something. I like to work with others, but I usually like to work by myself with help because I do need a little guide once in awhile. I try to make friends with the people I work with or meet, otherwise I can be quiet when I work usually, in my own world whenever I work on a project. I have 5 years experience of coding. I've started making games with blocks and now I code websites. I have 3 years of HTML (preferred), 2 year of CSS, 1 year of C++, and 2 years of Javascript-unfortunately I've forgotten this language due to the lack of use in my webistes. Outside of programming skills, I've done CPR but not certified, I've done hands-on learning about blood control, a Cyber Secuirty class, and a class about drawing firearms.</p>
+      <br>
+       <div class="parallax2"></div>
+        <p>My likings are. . .</p>
+        <p>Pugs, Pandas, asian food, snacking, video games, comics, skating, coding, sleeping, drawing, guns, any kind of bladed weapon, heavy metal and rock music, Tim Burton movies, The Simpsons, El Chavo, the color pink, UFC, Chuck "The Iceman" Liddell, Michael Bisping, Khabib Nurmagomedov, Steve Blum, the My Blue Heaven movie, and myself.</p>
+      <br>
+        <p>My dislikings are. . .</p>
+        <p>Cats, biology, Floyd Mayweather, and Tom Cruise.</p>
+      </div>
+    </div>
+    <div class="columnSide" style="background-color:#000;"></div>
+  </div>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>
+
+<style>
+  /* Side column animation */
+  .columnSide {
+    color: #fff;
+    background: linear-gradient(-100deg, #FFAFDF, #000);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+  }
+
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+</style>

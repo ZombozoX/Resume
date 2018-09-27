@@ -1,0 +1,247 @@
+<html>
+<head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+/* Header */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+    color: #FFAFDF;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+p {
+  margin-right: 110px;
+  margin-left: 110px;
+}
+
+.Content {
+  padding: 25px;
+  font-size: 15px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/* Columns */
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.columnSide {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    height: 1000px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 80%;
+    padding: 10px;
+    height: 85%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Links*/
+a:link {
+    color: #555;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #828282;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/* Other */
+iframe {
+  height: 500px;
+  width: 500px;
+  position: center;
+}
+
+img {
+  border-radius: 25%;
+}
+</style>
+<body>
+  <ul>
+    <li><a class="active" href="file:///E:/Coding/Test%20Resume/testIntro_Header.html">Home</a></li>
+    <li><a href="file:///E:/Coding/Test%20Resume/testProjectlink.html">Projects</a></li>
+    <li><a href="mailto:cchapin03@gmail.com">Contact</a></li>
+    <li><a href="file:///E:/Coding/Test%20Resume/testOtherlink.html">Other</a></li>
+  </ul>
+
+<div class="row">
+    <div class="columnSide" style="background-color:#000;"></div>
+    <div class="column">
+      <div class="Content">
+        <div class="container">
+          <h2>Carousel Example</h2>  
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <center><img src="otherImages/Magenta_Resize.png" alt="All Magenta" style="width:404px; height:585px"></center>
+                 <h5>Magenta</h5>
+                 <p>So, after a long day of school I just noticed that my beanie matched my shirt.</p>
+              </div>
+              <div class="item">
+                <center><img src="otherImages/Rename.jpg" alt="Dunce" style="width:360px; height:639px"></center>
+                 <h5>Dunce</h5>
+                 <p>When I got home I felt SO slow... mentally. It was a fun night.</p>
+              </div>
+              <div class="item">
+                <center><img src="otherImages/Sticker.jpg" alt="Sticker face" style="width:480px; height:639.5px"></center>
+                 <h5>Stickers!</h5>
+                 <p>My mama got my <b>baby</b> neice a watch that you put stickers on to dress up a little monster thing. My mama just wanted the watch and I just wanted the stickers, then I had fun with it.</p>
+              </div>
+              <div class="item">
+                <center><img src="otherImages/ME PANDA.jpg" alt="I am the Panda" style="width:100%;"></center>
+              </div>
+              <div class="item">
+                <center><img src="otherImages/Samurai.jpg" alt="I was in Tahoe" style="width:480px; height:639.5px"></center>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columnSide" style="background-color:#000;"></div>
+  </div>
+
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+</body>
+</html>
+
+<style>
+  /* Side column animation */
+  .columnSide {
+    color: #fff;
+    background: linear-gradient(-100deg, #FFAFDF, #000);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+  }
+
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+</style>

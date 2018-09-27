@@ -1,0 +1,73 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.top-container {
+  background-color: #FBD2FF;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #FDB2FF;
+  color: #555;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+</head>
+<body>
+
+<!--
+<div class="top-container">
+  <h1>Scroll Down</h1>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
+-->
+
+<div class="header" id="myHeader">
+  <h2>Cameron Chapin</h2>
+</div>
+
+<div class="content">
+  <h3></h3>
+  <p>.</p>
+  <p>Scroll back up to remove the sticky effect.</p>
+  <p>	I'm 15, a freshman at A-Tech. I prefer "Kid". I'm stubborn, an easy laugh, hyper, and always happy. I like to work with others, but I usually like to work by myself with help because I do need a little guide. I try to make friends with the people I work with or meet, I can be quiet when I work usually, in my own world whenever I work on a project. I've had 4 years expierence of coding. I've started making games with blocks, and now I code websites. I have 2 years of HTML (preferred), 1 year of CSS and C++, and 2 years of Javascript-unfortunately I forgotten this language.</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
